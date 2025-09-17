@@ -1,0 +1,42 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Hero from '../components/Hero.astro';
+import Features from '../components/Features.astro';
+import MathShowcase from '../components/MathShowcase.astro';
+---
+
+<Layout title="Australian Math Coach - Professional Math Tutoring Services">
+  <Hero />
+  <Features />
+  <MathShowcase />
+  
+  <!-- Call to Action Section -->
+  <section class="py-20 bg-gradient-to-r from-purple-600 via-pink-600 to-blue-600 relative overflow-hidden">
+    <!-- Background decoration -->
+    <div class="absolute inset-0 opacity-20">
+      <div class="absolute top-10 left-10 w-32 h-32 bg-white rounded-full floating"></div>
+      <div class="absolute bottom-10 right-10 w-24 h-24 bg-white rounded-full floating" style="animation-delay: -2s;"></div>
+      <div class="absolute top-1/2 left-1/4 w-16 h-16 bg-white rounded-full floating" style="animation-delay: -4s;"></div>
+    </div>
+    
+    <div class="max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8 relative z-10">
+      <h2 class="text-5xl md:text-6xl font-black text-white mb-6">
+        Ready to Excel in Mathematics?
+      </h2>
+      <p class="text-xl text-white/90 mb-8 max-w-2xl mx-auto">
+        Join hundreds of students who have improved their math skills with our expert guidance. 
+        Start your mathematical journey today!
+      </p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <button class="bg-white text-purple-600 hover:bg-gray-100 font-bold py-4 px-8 rounded-full transition-all duration-300 transform hover:scale-105 hover:shadow-lg text-lg">
+          <i class="fas fa-phone mr-2"></i>
+          Call Now: +61 412 345 678
+        </button>
+        <button class="bg-white/20 backdrop-blur-sm border-2 border-white/30 hover:bg-white/30 text-white font-bold py-4 px-8 rounded-full transition-all duration-300 transform hover:scale-105 text-lg">
+          <i class="fas fa-envelope mr-2"></i>
+          Email Us
+        </button>
+      </div>
+    </div>
+  </section>
+</Layout>
