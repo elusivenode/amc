@@ -111,3 +111,20 @@
 ::-webkit-scrollbar-thumb:hover {
   background: linear-gradient(to bottom, #9333ea, #db2777);
 }
+
+/* Math display styling */
+.math-latex {
+  font-family: 'Times New Roman', serif;
+  font-style: italic;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+
+/* MathJax styling */
+.MathJax {
+  font-size: 1.2em !important;
+}
+
+.math-display .MathJax {
+  font-size: 1.5em !important;
+}
