@@ -1,0 +1,18 @@
+{
+  "content": [
+    "./src/**/*.{astro,html,js,jsx,ts,tsx}",
+    "./public/**/*.{svg,png}"
+  ],
+  "theme": {
+    "extend": {
+      "gridTemplateColumns": {
+        "sidebar": "auto 1fr"
+      },
+      "colors": {
+        "amc-purple": "#7c3aed",
+        "amc-pink": "#ec4899"
+      }
+    }
+  },
+  "plugins": []
+}
