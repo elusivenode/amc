@@ -6,8 +6,8 @@ import react from '@astrojs/react';
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://www.australianmathcoach.com',
-  base: '/',
+  site: 'https://elusivenode.github.io',
+  base: '/amc/',
   vite: {
     plugins: [tailwindcss()]
   },

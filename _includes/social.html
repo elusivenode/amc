@@ -1,0 +1,19 @@
+{%- if site.social.links -%}
+  <ul class="social-media-list">
+    {%- for link in site.social.links -%}
+      {%- if link contains "twitter" -%}
+        <li><a href="{{ link }}"><i class="fab fa-twitter"></i> Twitter</a></li>
+      {%- elsif link contains "facebook" -%}
+        <li><a href="{{ link }}"><i class="fab fa-facebook"></i> Facebook</a></li>
+      {%- elsif link contains "linkedin" -%}
+        <li><a href="{{ link }}"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
+      {%- elsif link contains "instagram" -%}
+        <li><a href="{{ link }}"><i class="fab fa-instagram"></i> Instagram</a></li>
+      {%- elsif link contains "youtube" -%}
+        <li><a href="{{ link }}"><i class="fab fa-youtube"></i> YouTube</a></li>
+      {%- else -%}
+        <li><a href="{{ link }}"><i class="fas fa-link"></i> Social</a></li>
+      {%- endif -%}
+    {%- endfor -%}
+  </ul>
+{%- endif -%}

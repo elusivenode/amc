@@ -1,41 +1,234 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import Hero from '../components/Hero.astro';
-import Features from '../components/Features.astro';
-import MathShowcase from '../components/MathShowcase.astro';
 ---
 
-<Layout title="Australian Math Coach - Professional Math Tutoring Services">
-  <Hero />
-  <Features />
-  <MathShowcase />
-  
-  <!-- Call to Action Section -->
-  <section class="py-20 bg-gradient-to-r from-purple-600 via-pink-600 to-blue-600 relative overflow-hidden">
-    <!-- Background decoration -->
-    <div class="absolute inset-0 opacity-20">
-      <div class="absolute top-10 left-10 w-32 h-32 bg-white rounded-full floating"></div>
-      <div class="absolute bottom-10 right-10 w-24 h-24 bg-white rounded-full floating" style="animation-delay: -2s;"></div>
-      <div class="absolute top-1/2 left-1/4 w-16 h-16 bg-white rounded-full floating" style="animation-delay: -4s;"></div>
+<Layout title="Australian Math Coach – Personalised Maths Tutoring" description="Online and in-person maths coaching for Australian students, plus a companion practice app to keep skills sharp.">
+  <section id="hero" class="relative min-h-[80vh] flex items-center pt-32 pb-24">
+    <div class="max-w-[90vw] mx-auto grid lg:grid-cols-[1.1fr_auto] gap-12 items-center">
+      <div data-reveal class="bg-white/80 backdrop-blur-md border border-purple-100/70 rounded-3xl p-10 shadow-2xl">
+        <p class="uppercase tracking-widest text-sm text-purple-600 font-semibold mb-3">Australian Math Coach</p>
+        <h1 class="text-4xl md:text-6xl font-black text-gray-900 leading-tight mb-6">
+          Flexible maths coaching for ambitious students across Australia
+        </h1>
+        <p class="text-lg text-gray-700 mb-8">
+          Personalised one-on-one tutoring delivered online from Brisbane (with local in-person sessions around the western suburbs on request).
+          We help students master concepts, prepare for exams, and rebuild confidence from Year 5 through university bridging courses.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4">
+          <a href="#contact" class="btn-primary text-base px-10 py-4 text-center">Book a free consultation</a>
+          <a href="#services" class="btn-secondary text-base px-10 py-4 text-center">Explore coaching paths</a>
+        </div>
+      </div>
+      <div data-reveal class="hidden lg:flex flex-col gap-4 text-right text-gray-700">
+        <div class="bg-white/70 border border-purple-100 rounded-2xl py-6 px-8 shadow-lg">
+          <p class="text-4xl font-extrabold text-purple-600">98%</p>
+          <p class="text-sm uppercase tracking-wide text-gray-500">Students who improved two grade bands or more</p>
+        </div>
+        <div class="bg-white/70 border border-pink-100 rounded-2xl py-6 px-8 shadow-lg">
+          <p class="text-4xl font-extrabold text-pink-500">Year 5 – VCE</p>
+          <p class="text-sm uppercase tracking-wide text-gray-500">Curriculum-aligned lessons &amp; exam coaching</p>
+        </div>
+        <div class="bg-white/70 border border-blue-100 rounded-2xl py-6 px-8 shadow-lg">
+          <p class="text-4xl font-extrabold text-blue-500">10+ yrs</p>
+          <p class="text-sm uppercase tracking-wide text-gray-500">Professional tutoring experience</p>
+        </div>
+      </div>
     </div>
-    
-    <div class="max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8 relative z-10">
-      <h2 class="text-5xl md:text-6xl font-black text-white mb-6">
-        Ready to Excel in Mathematics?
-      </h2>
-      <p class="text-xl text-white/90 mb-8 max-w-2xl mx-auto">
-        Join hundreds of students who have improved their math skills with our expert guidance. 
-        Start your mathematical journey today!
-      </p>
-      <div class="flex flex-col sm:flex-row gap-4 justify-center">
-        <button class="bg-white text-purple-600 hover:bg-gray-100 font-bold py-4 px-8 rounded-full transition-all duration-300 transform hover:scale-105 hover:shadow-lg text-lg">
-          <i class="fas fa-phone mr-2"></i>
-          Call Now: +61 412 345 678
-        </button>
-        <button class="bg-white/20 backdrop-blur-sm border-2 border-white/30 hover:bg-white/30 text-white font-bold py-4 px-8 rounded-full transition-all duration-300 transform hover:scale-105 text-lg">
-          <i class="fas fa-envelope mr-2"></i>
-          Email Us
-        </button>
+  </section>
+
+  <section id="services" class="py-24 bg-white/90">
+    <div class="max-w-[90vw] mx-auto">
+      <div data-reveal class="text-center max-w-4xl mx-auto mb-16">
+        <h2 class="text-4xl md:text-5xl font-black text-gray-900 mb-4">Coaching paths tailored to each stage</h2>
+        <p class="text-lg text-gray-600">
+          Whether we meet online or in person, every learning plan is built around the student’s curriculum, goals, and confidence level.
+        </p>
+      </div>
+      <div class="grid gap-8 md:grid-cols-2 xl:grid-cols-3">
+        <article data-reveal class="bg-white rounded-3xl border border-purple-100 shadow-xl p-8 flex flex-col">
+          <h3 class="text-2xl font-bold text-gray-900 mb-3">Foundation Boost (Years 5–8)</h3>
+          <p class="text-gray-600 mb-4">Strengthen number sense, fractions, and problem solving. Ideal for students who need a confidence reset or enrichment beyond classwork.</p>
+          <ul class="text-sm text-gray-500 space-y-2 mb-6">
+            <li>✔ Weekly 60-minute lessons</li>
+            <li>✔ Parent-friendly progress snapshots</li>
+            <li>✔ Optional in-person catch-ups around Brisbane</li>
+          </ul>
+          <span class="mt-auto text-sm font-semibold text-purple-600 uppercase tracking-wide">From $70 per session</span>
+        </article>
+        <article data-reveal class="bg-white rounded-3xl border border-blue-100 shadow-xl p-8 flex flex-col">
+          <h3 class="text-2xl font-bold text-gray-900 mb-3">High School Success (Years 9–12)</h3>
+          <p class="text-gray-600 mb-4">Keep pace with coursework, plug any gaps, and build exam confidence for VCE General, Methods, and Specialist Mathematics.</p>
+          <ul class="text-sm text-gray-500 space-y-2 mb-6">
+            <li>✔ Custom study schedules plus exam-style practice</li>
+            <li>✔ Feedback loops that focus on thinking process</li>
+            <li>✔ Intensive revision blocks before assessments</li>
+          </ul>
+          <span class="mt-auto text-sm font-semibold text-blue-600 uppercase tracking-wide">From $85 per session</span>
+        </article>
+        <article data-reveal class="bg-white rounded-3xl border border-emerald-100 shadow-xl p-8 flex flex-col">
+          <h3 class="text-2xl font-bold text-gray-900 mb-3">Exam &amp; Bridge Coaching</h3>
+          <p class="text-gray-600 mb-4">University preparation, mature-age entry maths refreshers, and targeted support for national tests such as NAPLAN or UCAT quant.</p>
+          <ul class="text-sm text-gray-500 space-y-2 mb-6">
+            <li>✔ Diagnostic start session with action plan</li>
+            <li>✔ Weekly accountability check-ins</li>
+            <li>✔ Access to curated question banks</li>
+          </ul>
+          <span class="mt-auto text-sm font-semibold text-emerald-600 uppercase tracking-wide">Programs from 4 weeks</span>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="approach" class="py-24">
+    <div class="max-w-[90vw] mx-auto grid lg:grid-cols-[0.85fr_1fr] gap-12 items-start">
+      <div data-reveal class="bg-white rounded-3xl border border-gray-200 shadow-xl p-10">
+        <h2 class="text-3xl md:text-4xl font-black text-gray-900 mb-6">How a coaching block unfolds</h2>
+        <ol class="space-y-6 text-gray-600">
+          <li>
+            <span class="block text-purple-600 font-semibold uppercase text-sm mb-1">1. Discover</span>
+            We meet virtually to learn about the student’s goals, school schedule, and sticking points. Baseline tasks help us map the first wins.
+          </li>
+          <li>
+            <span class="block text-purple-600 font-semibold uppercase text-sm mb-1">2. Customise</span>
+            Lessons combine clear explanations, interactive practice, and exam-style questions that match the current syllabus.
+          </li>
+          <li>
+            <span class="block text-purple-600 font-semibold uppercase text-sm mb-1">3. Reinforce</span>
+            Between sessions we set micro-practice challenges, guided reflections, and quick check-ins to lock in progress.
+          </li>
+        </ol>
+      </div>
+      <div class="space-y-8">
+        <div data-reveal class="bg-gradient-to-br from-purple-50 via-white to-blue-50 border border-purple-100 rounded-3xl p-8 shadow-lg">
+          <h3 class="text-2xl font-bold text-gray-900 mb-3">Online-first, local when it helps</h3>
+          <p class="text-gray-600">Zoom-based sessions keep scheduling easy for families anywhere in Australia. Students around Brisbane can add occasional in-person workshops for exam intensives or tricky topics.</p>
+        </div>
+        <div data-reveal class="bg-gradient-to-br from-pink-50 via-white to-amber-50 border border-pink-100 rounded-3xl p-8 shadow-lg">
+          <h3 class="text-2xl font-bold text-gray-900 mb-3">Transparent feedback for families</h3>
+          <p class="text-gray-600">Every block finishes with a short progress summary, next-focus recommendations, and take-home strategies so parents stay in the loop.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="results" class="py-24 bg-white/90">
+    <div class="max-w-[90vw] mx-auto">
+      <div data-reveal class="text-center max-w-3xl mx-auto mb-16">
+        <h2 class="text-4xl font-black text-gray-900 mb-4">Real outcomes from real students</h2>
+        <p class="text-lg text-gray-600">From students who feared maths to those chasing top-band scores, we focus on measurable wins.</p>
+      </div>
+      <div class="grid gap-8 md:grid-cols-3">
+        <div data-reveal class="bg-white border border-purple-100 rounded-3xl p-8 shadow-xl">
+          <p class="text-5xl font-black text-purple-600 mb-2">6 → 9</p>
+          <p class="text-gray-600">Year 10 student lifted their NAPLAN band in two terms with weekly online sessions and targeted practice sets.</p>
+        </div>
+        <div data-reveal class="bg-white border border-blue-100 rounded-3xl p-8 shadow-xl">
+          <p class="text-5xl font-black text-blue-500 mb-2">ATAR +11</p>
+          <p class="text-gray-600">VCE Methods student boosted their predicted ATAR by eleven points after a structured 12-week sprint.</p>
+        </div>
+        <div data-reveal class="bg-white border border-emerald-100 rounded-3xl p-8 shadow-xl">
+          <p class="text-5xl font-black text-emerald-500 mb-2">5 ★</p>
+          <p class="text-gray-600">Families rate our coaching 5/5 for communication, clarity, and the way we restore confidence.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="app" class="py-24">
+    <div class="max-w-[90vw] mx-auto grid lg:grid-cols-[1fr_0.9fr] gap-12 items-center">
+      <div data-reveal class="bg-gradient-to-br from-indigo-600 via-purple-600 to-pink-500 text-white rounded-3xl p-10 shadow-2xl">
+        <p class="uppercase text-xs tracking-[0.3em] mb-3 text-white/70">New • Practice Resource</p>
+        <h2 class="text-4xl font-black mb-4">Introducing the AMC Problem Lab</h2>
+        <p class="text-lg text-white/90 mb-6">
+          A growing collection of interactive problem sets that reinforce what we cover in coaching. Launch tricky algebra drills, visualise calculus ideas, and review step-by-step solutions.
+        </p>
+        <ul class="space-y-3 text-sm text-white/80 mb-8">
+          <li>• Curated to match Australian syllabi</li>
+          <li>• Smart hints that guide thinking without giving the answer</li>
+          <li>• Track streaks and share progress with your coach</li>
+        </ul>
+        <a
+          href="https://app.australianmathcoach.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="inline-flex items-center gap-2 bg-white text-purple-600 font-semibold px-8 py-3 rounded-full shadow-lg hover:shadow-xl transition"
+        >
+          Visit the Problem Lab
+          <i class="fas fa-arrow-up-right-from-square"></i>
+        </a>
+      </div>
+      <div data-reveal class="bg-white/80 border border-purple-100 rounded-3xl p-10 shadow-xl">
+        <h3 class="text-2xl font-bold text-gray-900 mb-4">Coming soon for subscribers</h3>
+        <p class="text-gray-600 mb-6">
+          Right now the Lab is free for coaching students while we add more content. Later this year it will be available as a low-cost monthly subscription for independent learners.
+        </p>
+        <div class="space-y-4 text-gray-600">
+          <div>
+            <p class="font-semibold text-gray-900">Want early access without coaching?</p>
+            <p>Join the waitlist when you book a consultation or send us an email—beta slots open soon.</p>
+          </div>
+          <div>
+            <p class="font-semibold text-gray-900">Educator or school program?</p>
+            <p>Ask about bulk licences and co-branded practice sets tailored to your curriculum maps.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="py-24 bg-gradient-to-br from-purple-600 via-pink-600 to-blue-600 text-white">
+    <div class="max-w-[90vw] mx-auto grid lg:grid-cols-[1fr_0.85fr] gap-12 items-start">
+      <div data-reveal class="space-y-6">
+        <h2 class="text-4xl font-black">Let’s build a plan together</h2>
+        <p class="text-lg text-white/90">
+          Tell us about the student, their current year level, and what success looks like. We respond within one business day with suggested session times and next steps.
+        </p>
+        <div class="space-y-3 text-white/80">
+          <p><i class="fas fa-phone mr-3"></i> <a href="tel:+61418764798" class="hover:text-white">0418 764 798</a></p>
+          <p><i class="fas fa-envelope mr-3"></i> <a href="mailto:info@australianmathcoach.com" class="hover:text-white">info@australianmathcoach.com</a></p>
+          <p><i class="fas fa-location-dot mr-3"></i> 6 Turner Street, Corinda, Brisbane Q4075</p>
+        </div>
+      </div>
+      <div data-reveal class="bg-white/95 rounded-3xl p-8 text-gray-800 shadow-2xl">
+        <h3 class="text-2xl font-bold mb-4">Quick enquiry form</h3>
+        <p class="text-sm text-gray-600 mb-6">No spam—just a friendly reply with availability and a short plan.</p>
+        <form
+          class="space-y-4"
+          action="https://formsubmit.co/info@australianmathcoach.com"
+          method="POST"
+          target="_blank"
+        >
+          <input type="hidden" name="_subject" value="Australian Math Coach enquiry" />
+          <div>
+            <label for="name" class="text-sm font-semibold text-gray-600 block mb-1">Parent or guardian name *</label>
+            <input id="name" name="name" required class="w-full border border-gray-200 rounded-2xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-purple-500" placeholder="Alex Taylor" />
+          </div>
+          <div class="grid sm:grid-cols-2 gap-4">
+            <div>
+              <label for="email" class="text-sm font-semibold text-gray-600 block mb-1">Email *</label>
+              <input id="email" name="email" type="email" required class="w-full border border-gray-200 rounded-2xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-purple-500" placeholder="name@example.com" />
+            </div>
+            <div>
+              <label for="phone" class="text-sm font-semibold text-gray-600 block mb-1">Phone</label>
+              <input id="phone" name="phone" class="w-full border border-gray-200 rounded-2xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-purple-500" placeholder="Optional" />
+            </div>
+          </div>
+          <div class="grid sm:grid-cols-2 gap-4">
+            <div>
+              <label for="student" class="text-sm font-semibold text-gray-600 block mb-1">Student first name *</label>
+              <input id="student" name="student" required class="w-full border border-gray-200 rounded-2xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-purple-500" placeholder="Jamie" />
+            </div>
+            <div>
+              <label for="year-level" class="text-sm font-semibold text-gray-600 block mb-1">Year level *</label>
+              <input id="year-level" name="year level" required class="w-full border border-gray-200 rounded-2xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-purple-500" placeholder="Year 10" />
+            </div>
+          </div>
+          <div>
+            <label for="goals" class="text-sm font-semibold text-gray-600 block mb-1">Goals or challenges *</label>
+            <textarea id="goals" name="goals" rows="4" required class="w-full border border-gray-200 rounded-2xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-purple-500" placeholder="Tell us how we can help"></textarea>
+          </div>
+          <button type="submit" class="w-full btn-primary py-4 text-base font-semibold text-center">Send enquiry</button>
+        </form>
       </div>
     </div>
   </section>

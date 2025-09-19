@@ -1,0 +1,65 @@
+# Site settings
+title: "Australian Math Coach"
+description: "Professional math tutoring services in Australia. Expert guidance for students of all levels."
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://www.australianmathcoach.com" # the base hostname & protocol for your site
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+theme: minima
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+# Collections
+collections:
+  services:
+    output: true
+    permalink: /:name/
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "default"
+  - scope:
+      path: ""
+      type: "services"
+    values:
+      layout: "service"
+
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - README.md
+  - LICENSE
+
+# SEO
+author: "Australian Math Coach"
+google_analytics: # Add your GA tracking ID here
+google_site_verification: # Add your Google Search Console verification code here
+
+# Social
+social:
+  name: Australian Math Coach
+  links:
+    - https://twitter.com/australianmathcoach
+    - https://facebook.com/australianmathcoach
+    - https://linkedin.com/company/australianmathcoach
+
+# Math rendering
+kramdown:
+  math_engine: mathjax
+  math_engine_opts:
+    preview: true
+    preview_as_code: true
