@@ -212,10 +212,10 @@ All pages now use a consistent blue/white system:
 - ✅ Added path-aware Home button in header on sub-pages.
 - ✅ Enlarged corner logo (w-72 md:w-96) on internal pages.
 - ✅ Updated phone availability to Sat–Sun 8:00 AM – 8:00 PM.
+- ✅ Migrated `404.html` and `robots.txt` into `public/` for Astro/GitHub Pages deployment.
 - ✅ All pages tested with `npm run build`; deployed via GitHub Actions.
 
 ## Known Cleanup Candidates (Non-blocking)
 - Legacy components in `src/components/` (Features.astro, Hero.astro, MathShowcase.astro) can be removed if confirmed unused.
 - `tailwind.config.json` exists but Tailwind v4 setup is plugin/CSS-driven; remove if not used.
-- Root `404.html` and `robots.txt` are legacy-era top-level files and should be reviewed for either migration into `public/` or removal.
 - Global CSS legacy classes can be cleaned up if no longer referenced.
