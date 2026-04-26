@@ -1,0 +1,29 @@
+---
+export interface Props {
+  title?: string;
+  description?: string;
+  ctaLabel?: string;
+  ctaHref?: string;
+}
+
+const {
+  title = 'Book a free session',
+  description = "You'll get a clear next step and a practical starting plan. No pressure, just a helpful first conversation.",
+  ctaLabel = 'Book a free session',
+  ctaHref = 'mailto:hamish@australianmathcoach.com'
+} = Astro.props;
+---
+
+<section class="py-16 md:py-20">
+  <div class="max-w-6xl mx-auto px-6">
+    <div class="rounded-3xl bg-white border border-slate-100 p-8 md:p-12 shadow-sm">
+      <div class="max-w-3xl mx-auto text-center">
+        <h2 class="text-3xl md:text-4xl font-bold tracking-tight text-slate-900 mb-4">{title}</h2>
+        <p class="text-slate-700 text-lg leading-relaxed mb-8">{description}</p>
+        <a href={ctaHref} class="inline-flex items-center justify-center rounded-lg bg-[#204585] text-white font-bold px-8 py-3 hover:bg-[#1a3a70] transition-colors">
+          {ctaLabel}
+        </a>
+      </div>
+    </div>
+  </div>
+</section>

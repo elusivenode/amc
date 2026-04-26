@@ -1,0 +1,27 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+const ctaHref = 'mailto:hamish@australianmathcoach.com';
+---
+
+<Layout title="Session Options | Australian Math Coach" description="Flexible small-group and 1:1 online maths coaching session options.">
+  <section class="py-16 md:py-20 bg-white">
+    <div class="max-w-5xl mx-auto px-6">
+      <h1 class="text-4xl md:text-5xl font-bold tracking-tight text-slate-900 mb-6">Small Groups &amp; 1:1 Support</h1>
+      <p class="text-lg text-slate-700 leading-relaxed mb-6">
+        Session options are designed to match each student&apos;s needs, goals, and preferred learning style.
+      </p>
+      <p class="text-lg text-slate-700 leading-relaxed mb-8">
+        Small groups provide collaborative momentum, while 1:1 sessions give focused support for specific gaps or advanced extension goals.
+      </p>
+      <ul class="space-y-3 text-slate-700 mb-10">
+        <li>• Online small-group coaching</li>
+        <li>• Focused 1:1 support</li>
+        <li>• Flexible pathways based on progress</li>
+      </ul>
+      <a href={ctaHref} class="inline-flex items-center justify-center rounded-full bg-gradient-to-r from-blue-700 to-sky-600 text-white font-bold px-8 py-3 hover:from-blue-800 hover:to-sky-700 transition-colors">
+        Book a free session
+      </a>
+    </div>
+  </section>
+</Layout>

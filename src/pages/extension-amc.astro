@@ -1,0 +1,88 @@
+---
+import Layout from '../layouts/Layout.astro';
+import CTASection from '../components/CTASection.astro';
+
+const ctaHref = 'mailto:hamish@australianmathcoach.com';
+---
+
+<Layout
+  title="Extension & AMC Preparation | Australian Math Coach"
+  description="Extension and competition maths for students who enjoy challenge, deep thinking, and advanced problem-solving."
+  showCornerLogo={false}
+>
+  <section class="py-16 md:py-20 bg-white">
+    <div class="max-w-5xl mx-auto px-6">
+      <div class="max-w-3xl">
+        <h1 class="text-4xl md:text-5xl font-bold tracking-tight text-slate-900 mb-4">Extension &amp; Competition Maths</h1>
+        <p class="text-xl text-blue-800 font-medium leading-relaxed">
+          For students who enjoy maths and want to go beyond routine classroom problems.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-16 md:py-20 bg-slate-50">
+    <div class="max-w-5xl mx-auto px-6">
+      <div class="max-w-3xl space-y-5">
+        <h2 class="text-3xl md:text-4xl font-bold tracking-tight text-slate-900">Why competition maths?</h2>
+        <p class="text-lg text-slate-700 leading-relaxed">
+          Competition maths is less about repeating familiar methods and more about thinking creatively. Students are challenged with unfamiliar problems that reward curiosity and strategic reasoning.
+        </p>
+        <p class="text-lg text-slate-700 leading-relaxed">
+          For motivated students, this style of mathematics is often more engaging and enjoyable. It builds deeper understanding because students learn to explore, test ideas, and justify their thinking.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-16 md:py-20 bg-white">
+    <div class="max-w-5xl mx-auto px-6">
+      <div class="max-w-3xl">
+        <h2 class="text-3xl md:text-4xl font-bold tracking-tight text-slate-900 mb-5">A pathway for advanced students</h2>
+        <ul class="space-y-3 text-lg text-slate-700 leading-relaxed">
+          <li>• Australian Mathematics Competition (AMC)</li>
+          <li>• Australian Intermediate Mathematical Olympiad (AIMO)</li>
+          <li>• Australian Mathematical Olympiad (AMO)</li>
+        </ul>
+        <p class="mt-6 text-lg text-slate-700 leading-relaxed">
+          AIMO and AMO are invitation-based competitions. For most students, strong performance in the AMC is the key entry point into this pathway.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-16 md:py-20 bg-slate-50">
+    <div class="max-w-5xl mx-auto px-6">
+      <div class="max-w-3xl space-y-5">
+        <h2 class="text-3xl md:text-4xl font-bold tracking-tight text-slate-900">Learn through guided group problem-solving</h2>
+        <p class="text-lg text-slate-700 leading-relaxed">
+          Sessions are run in small groups where students work through rich problems together. This creates a high-energy learning environment with strong peer momentum.
+        </p>
+        <p class="text-lg text-slate-700 leading-relaxed">
+          Discussion is encouraged, and students are shown multiple valid approaches. This process accelerates improvement and builds confidence with difficult, unfamiliar questions.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-16 md:py-20 bg-white">
+    <div class="max-w-5xl mx-auto px-6">
+      <div class="max-w-3xl">
+        <h2 class="text-3xl md:text-4xl font-bold tracking-tight text-slate-900 mb-5">Skills developed</h2>
+        <ul class="space-y-3 text-lg text-slate-700 leading-relaxed">
+          <li>• Pattern recognition</li>
+          <li>• Mathematical reasoning</li>
+          <li>• Problem-solving strategies</li>
+          <li>• Confidence with unfamiliar problems</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <CTASection
+    title="Start with a free first session"
+    description="The first session is a chance to understand your child&apos;s current thinking, goals and whether this style of coaching is a good fit."
+    ctaLabel="Book a free session"
+    ctaHref={ctaHref}
+  />
+</Layout>

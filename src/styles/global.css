@@ -1,6 +1,4 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
 
 /* Custom CSS for enhanced animations and effects */
 @layer base {
@@ -8,11 +6,7 @@
     scroll-behavior: smooth;
     font-size: 18px;
     background-color: #f8fafc;
-    background-image: url('/images/euler_derivation_light.png');
-    background-size: 1400px auto;
-    background-position: top center;
-    background-repeat: repeat;
-    background-attachment: fixed;
+    background-image: none;
     min-height: 100vh;
   }
   

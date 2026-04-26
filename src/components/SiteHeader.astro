@@ -1,0 +1,31 @@
+---
+const ctaHref = 'mailto:hamish@australianmathcoach.com';
+const isSubPage = Astro.url.pathname !== '/';
+---
+
+<header class="sticky top-0 z-50 bg-white/95 backdrop-blur border-b border-slate-200">
+  <div class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
+    <div aria-hidden="true"></div>
+
+    <nav class="hidden md:flex items-center gap-7 text-sm font-medium text-slate-700">
+      {isSubPage && <a href="/" class="hover:text-blue-700 transition-colors">Home</a>}
+      <a href="/services" class="hover:text-blue-700 transition-colors">Programs</a>
+      <a href="/about" class="hover:text-blue-700 transition-colors">About</a>
+      <a href="/contact" class="hover:text-blue-700 transition-colors">Contact</a>
+      <a href={ctaHref} class="text-sm px-5 py-2.5 rounded-lg font-semibold text-white bg-[#204585] hover:bg-[#1a3a70] transition-colors shadow-sm">Book a free session</a>
+    </nav>
+
+    <div class="md:hidden flex items-center gap-2">
+      {
+        isSubPage && (
+          <a href="/" class="inline-flex items-center justify-center min-w-[76px] text-sm px-3 py-2.5 rounded-lg font-semibold text-slate-700 border border-slate-300 hover:border-blue-300 hover:text-blue-700 transition-colors">
+            Home
+          </a>
+        )
+      }
+      <a href={ctaHref} class="inline-flex items-center justify-center min-w-[116px] text-base px-5 py-3 rounded-lg font-semibold !text-white visited:!text-white hover:!text-white focus:!text-white active:!text-white no-underline bg-[#204585] hover:bg-[#1a3a70] transition-colors shadow-sm" style="color: #ffffff;">
+        Book now
+      </a>
+    </div>
+  </div>
+</header>

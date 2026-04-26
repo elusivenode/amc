@@ -1,0 +1,27 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+const ctaHref = 'mailto:hamish@australianmathcoach.com';
+---
+
+<Layout title="Online Maths Coaching | Australian Math Coach" description="Online maths coaching for Years 5-12 students focused on understanding, confidence, and problem-solving.">
+  <section class="py-16 md:py-20 bg-white">
+    <div class="max-w-5xl mx-auto px-6">
+      <h1 class="text-4xl md:text-5xl font-bold tracking-tight text-slate-900 mb-6">Online Maths Coaching</h1>
+      <p class="text-lg text-slate-700 leading-relaxed mb-6">
+        Coaching is designed for students who need clear explanations, stronger foundations, and practical strategies to improve in school maths.
+      </p>
+      <p class="text-lg text-slate-700 leading-relaxed mb-8">
+        Sessions are online-first and structured to build independent thinking, not just short-term homework completion.
+      </p>
+      <ul class="space-y-3 text-slate-700 mb-10">
+        <li>• Years 5-12 curriculum support</li>
+        <li>• Confidence and problem-solving development</li>
+        <li>• Ongoing progress focus with clear next steps</li>
+      </ul>
+      <a href={ctaHref} class="inline-flex items-center justify-center rounded-full bg-gradient-to-r from-blue-700 to-sky-600 text-white font-bold px-8 py-3 hover:from-blue-800 hover:to-sky-700 transition-colors">
+        Book a free session
+      </a>
+    </div>
+  </section>
+</Layout>
