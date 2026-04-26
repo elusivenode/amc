@@ -217,6 +217,5 @@ All pages now use a consistent blue/white system:
 ## Known Cleanup Candidates (Non-blocking)
 - Legacy components in `src/components/` (Features.astro, Hero.astro, MathShowcase.astro) can be removed if confirmed unused.
 - `tailwind.config.json` exists but Tailwind v4 setup is plugin/CSS-driven; remove if not used.
-- Legacy markdown files in root (about.md, contact.md, index.md, services.md) are Jekyll-era; can be removed.
-- Legacy Jekyll backup folder (`jekyll-backup/`) can be archived or removed.
+- Root `404.html` and `robots.txt` are legacy-era top-level files and should be reviewed for either migration into `public/` or removal.
 - Global CSS legacy classes can be cleaned up if no longer referenced.
